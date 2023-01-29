@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Realizar pedido de utensilios para postres</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+<body background="./imagenes/patronbonito2.jpg">
+</head>
+<body>
+<h1>REALIZA TU PEDIDO DE UTENSILIOS</h1>
+<h2>Moldes para Pay</h2>
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><img src="./imagenes/moldechiquito.jpg" width="200px" height="200px"></td>
+		<td><img src="./imagenes/moldemediano.jpg" width="200px" height="200px"></td>
+		<td><img src="./imagenes/moldegrande.jpg" width="200px" height="200px"></td>
+	</tr>
+<table border="0" cellpadding="0" cellspacing="30">
+	<tr>
+    <td align="center"><input type="radio" id="chico" name="combo" value="Chico"></td>
+	<td align="center"><label for="chico">Chico $150.00</label></td>
+    <td align="center"><input type="radio" id="mediano" name="combo" value="Mediano"></td>
+	<td align="center"><label for="chico">Mediano $200.00</label></td>
+	<td align="center"><input type="radio" id="grande" name="combo" value="Grande"></td>
+	<td align="center"><label for="chico">Grande $350.00</label></td>
+    </tr>
+</table>
+<h2>Batidoras</h2>
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><img src="./imagenes/batidorabasica.jpg" width="200px" height="200px"></td>
+		<td><img src="./imagenes/batidoraprofesional.jpg" width="200px" height="200px"></td>
+	</tr>
+	<tr>
+		<td align="center">Básica $3,550.00</td>
+		<td align="center">Profesional $4,980.00</td>
+	</tr>
+</table>
+<h3>¿Qué tipo de batidora te gustaría comprar?</h3>
+<select name="batidoras" id="batidoras">
+	    <option value="doble">Ninguna</option>
+		<option value="sencilla">Básica</option>
+		<option value="doble">Profesional</option>
+	</select>
+<h2>Moldes para Gelatina</h2>
+	<p>
+		<p align="left"><input type="checkbox" name="molde1" id="molde1" value="Conforma"></p>
+	<p align="left"><label for="molde1"></label></p>
+		<p align="left"><img src="./imagenes/moldeconformas.jpg" alt="Conforma" width="300px" height="300px"></p>
+		<div align="left">Con forma $75.00</div>
+
+		<p align="left"><input type="checkbox" name="molde2" id="molde2" value="Refractario"></p>
+	<p align="left"><label for="molde2"></label></p>
+		<p align="left"><img src="./imagenes/refractario.jpg" alt="Refractario" width="300px" height="300px"></p>
+		<div align="left">Refractario $450.00</div>
+
+		<p align="left"><input type="checkbox" name="molde3" id="molde3" value="Cuadrado"></p>
+	<p align="left"><label for="molde3"></label></p>
+		<p align="left"><img src="./imagenes/moldecuadrado.jpg" alt="Cuadrado" width="300px" height="300px"></p>
+		<div align="left">Cuadrado $467.00</div>
+
+		<p align="left"><input type="checkbox" name="molde4" id="molde4" value="Circular"></p>
+	<p align="left"><label for="molde4"></label></p>
+		<p align="left"><img src="./imagenes/moldecircular.jpg" alt="Circular" width="300px" height="300px"></p>
+		<div align="left">Circular $245.00</div>
+
+		<p align="left"><input type="checkbox" name="molde5" id="molde5" value="Silicon"></p>
+	<p align="left"><label for="molde5"></label></p>
+		<p align="left"><img src="./imagenes/moldedesilicon.jpg" alt="Silicon" width="300px" height="300px"></p>
+		<div align="left">Silicón $549.00</div>
+	</p>
+<table border="0" cellpadding="0" cellspacing="30">
+	<tr>
+    <td align="center"><input type="radio" id="chico" name="molde" value="Chico"></td>
+	<td align="center"><label for="chico">Chico</label></td>
+    <td align="center"><input type="radio" id="mediano" name="molde" value="Mediano"></td>
+	<td align="center"><label for="chico">Mediano</label></td>
+	<td align="center"><input type="radio" id="grande" name="molde" value="Grande"></td>
+	<td align="center"><label for="chico">Grande</label></td>
+    </tr>
+</table>
+<form method="get" action="orden.thml">
+<h2>Utensilios para hacer una crepa</h2>
+      <input type="checkbox" name="comp1" id="cmp1" value="crepera electrica con control de temperatura ajustable a $759.00 MX">
+      <label for="comp1">crepera eléctrica con control de temperatura ajustable a $759.00 MX</label><br></br>
+      <p align="center"><img src="./imagenes/creperaelectrica.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp2" id="cmp2" value="kit de esparcidor y espatula, juego de 2 piezas (esparcidor de 10 cm y espatula de 35 cm). ">
+      <label for="comp2">kit original de esparcidor y espátula, juego de 2 piezas a $526.00MX. </label><br></br>
+      <p align="center"><img src="./imagenes/esparcidordecrepas.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp3" id="cmp3" value="Volteador Liso para crepas a 79.00MX">
+      <label for="comp3">Volteador liso para crepas a $79.00MX</label><br></br>
+      <p align="center"><img src="./imagenes/volteadoraparacrepas.jpg" width="500px" height="250px"></p>
+      
+      <h3>Tamaño de la crepera electrica</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Tamaño del kit</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Tamaño del volteador</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+<h2>Moldes para una tarta de chocolate</h2>
+      <input type="checkbox" name="comp1" id="cmp1" value="juego de 8 sartenes para tarta de 10 a 16 cm con precio accesible de $332.90">
+      <label for="comp1">juego de 8 sartenes para tarta de 10 a 16 cm con precio accesible de $332.90</label><br></br>
+      <p align="center"><img src="./imagenes/moldedetarta.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp2" id="cmp2" value="3 moldes para tartas con forma de nubes de bloque de rejilla en 3D ">
+      <label for="comp2">3 moldes para tartas con forma de nubes de bloque de rejilla en 3D de $357.90</label><br></br>
+      <p align="center"><img src="./imagenes/moldeparatarta.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp3" id="cmp3" value="Kit de suministros para decoración de pasteles, juego de 542, herramientas para hornear pasteles con 3 paquetes de moldes para tartas con forma de resorte, alfombrilla antiadherente, soporte para tocadiscos, nivelador de pasteles, puntas rusas y de glaseado con tabla de patrones">
+      <label for="comp3">Kit de suministros para decoración de pasteles, juego de 542, herramientas para hornear pasteles con 3 paquetes de moldes para tartas con forma de resorte, alfombrilla antiadherente, soporte para tocadiscos, nivelador de pasteles, puntas rusas y de glaseado con tabla de patrones de $1,104.81</label><br></br>
+      <p align="center"><img src="./imagenes/kitparatarta.jpg" width="500px" height="250px"></p>
+      
+      <h3>juego de sartenes para tarta</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Molde para tarta con formas</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Kit de suministros</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h2>Utensilios para hacer una Carlota</h2>
+      <input type="checkbox" name="comp1" id="cmp1" value="Refractario para pay de 25 cm con precios de $189.00 ">
+      <label for="comp1">Refractario para pay de 25 cm con precios de $189.00</label><br></br>
+      <p align="center"><img src="./imagenes/refractoriodepay.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp2" id="cmp2" value="3 Refacorio para pay con forma de nubes de bloque de rejilla en 3D ">
+      <label for="comp2">1 cuchillo de cocina profesional $130</label><br></br>
+      <p align="center"><img src="./imagenes/cuchilloprofesional.jpg" width="500px" height="250px"></p>
+      <input type="checkbox" name="comp3" id="cmp3" value=",Tabla para cortar">
+      <label for="comp3">Tabla para cortar $80</label><br></br>
+      <p align="center"><img src="./imagenes/tabladepicar.jpg" width="450px" height="450px"></p>
+      
+      <h3>Refractario para pay</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Tabla para picar</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+      <h3>Cuchillos</h3>
+      <input Type="radio" id="chico" name="combo" value="chico">
+      <label for="chico">Chico</label><br>
+       <input Type="radio" id="mediano" name="combo" value="mediano">
+      <label for="mediano">Mediano</label><br>
+       <input Type="radio" id="grande" name="combo" value="grande">
+      <label for="grande">Grande</label><br>
+    <h2>Moldes para pastel beso de angel</h2>
+<input type="checkbox" name="comp1" id="cmp1" value="Molde grande de 26 cm x 13 cm con un precio de $213.99">
+<iabel for="comp1">Molde grande de 26 cm x 13 cm con un precio de $213.99</iabel><br></br>
+<p align="center"><img src="./imagenes/molde1.jpg" width="500px" height="250px"></p>
+
+<input type="checkbox" name="comp2" id="cmp2" value="Molde mediano 11.2 x 10 x 5 pulgadas con un precio de $350.50">
+<iabel for="comp2">Molde mediano 11.2 x 10 x 5 pulgadas con un precio de $350.50<iabel><br></br>
+<p align="center"><img src="./imagenes/molde2.jpg" width="500px" height="250px"></p>
+
+<input type="checkbox" name="comp3" id="cmp3" value="Kit de 6 Utensilios para decorar tu pastel,mangas pasteleras,alisador,espatulas,boquillas de distinto estilo a un precio de 
+$250.99">
+<iabel for="comp3"> 6 Utensilios para decorar tu pastel,mangas pasteleras,alisador,espatulas,boquillas de distinto estilo a un precio de 
+$250.99<iabel><br></br>
+<p align="center"><img src="./imagenes/decoracion.jpg" width="500px" height="250px"></p>
+
+<input type="checkbox" name="comp3" id="cmp3" value="Kit 177 piezas decoracion pastel,Aleación de aluminio giratorio para tortas, consejos de decoración de tartas numeradas y herramientas de glaseado para hornear magdalenas, galletas, magdalenas, utensilios de cocina a un precio de $1365">   
+<iabel for="comp3"> Kit 177 piezas decoracion pastel,Aleación de aluminio giratorio para tortas, consejos de decoración de tartas numeradas y herramientas de glaseado para hornear magdalenas, galletas, magdalenas, utensilios de cocina a un precio de $1365.00<iabel><br></br>
+<p align="center"><img src="./imagenes/kitbeso.jpg" width="500px" height="250px"></p>
+
+<h3>Moldes</h3>
+<input Type="radio" id="mediano" name="combo" value="mediano">
+<label for="mediano">Mediano</label><br>
+<input Type="radio" id="grande" name="combo" value="grande">
+<label for="grande">Grande</label><br>
+ <h2>Contacto</h2>
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre</label>
+          </td>
+          <td><input type="text" id="nombre" name="nombre" placeholder="Aqui va solo tu nombre">
+          </td>
+        </tr>
+        <tr>
+      <td><label for="telefono">Telefono:</label></td>
+      <td><input type="text" id="telefono" name="telefono" placeholder="Aquì escribes tu celular"></td>
+        </tr>
+      </table>
+  <input type="button" id="button1" name="button1" value="CONFIRMAR PEDIDO" onclick="alert ('PEDIDO REALIZADO')"><br><br>
+</body>
+</html>
